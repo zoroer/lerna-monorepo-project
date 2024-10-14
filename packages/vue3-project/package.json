@@ -1,6 +1,6 @@
 {
-  "name": "@lernaTest/vue3-project",
-  "version": "0.0.1",
+  "name": "vue3-project",
+  "version": "0.0.2",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
