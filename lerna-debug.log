@@ -4,45 +4,16 @@
 3 verbose rootPath /Users/zoro/workspace/TestTry/monorepo-test
 4 info versioning independent
 5 silly isAnythingCommitted
-6 error Error: Command failed with exit code 129: git rev-list --count --all --max-count=1
-6 error usage: git rev-list [OPTION] <commit-id>... [ -- paths... ]
-6 error   limiting output:
-6 error     --max-count=<n>
-6 error     --max-age=<epoch>
-6 error     --min-age=<epoch>
-6 error     --sparse
-6 error     --no-merges
-6 error     --min-parents=<n>
-6 error     --no-min-parents
-6 error     --max-parents=<n>
-6 error     --no-max-parents
-6 error     --remove-empty
-6 error     --all
-6 error     --branches
-6 error     --tags
-6 error     --remotes
-6 error     --stdin
-6 error     --quiet
-6 error   ordering output:
-6 error     --topo-order
-6 error     --date-order
-6 error     --reverse
-6 error   formatting output:
-6 error     --parents
-6 error     --children
-6 error     --objects | --objects-edge
-6 error     --unpacked
-6 error     --header | --pretty
-6 error     --abbrev=<n> | --no-abbrev
-6 error     --abbrev-commit
-6 error     --left-right
-6 error     --count
-6 error   special purpose:
-6 error     --bisect
-6 error     --bisect-vars
-6 error     --bisect-all
-6 error     at makeError (/Users/zoro/workspace/TestTry/monorepo-test/node_modules/execa/lib/error.js:59:11)
-6 error     at module.exports.sync (/Users/zoro/workspace/TestTry/monorepo-test/node_modules/execa/index.js:186:17)
-6 error     at Object.execSync (/Users/zoro/workspace/TestTry/monorepo-test/node_modules/lerna/dist/index.js:1579:31)
-6 error     at isAnythingCommitted (/Users/zoro/workspace/TestTry/monorepo-test/node_modules/lerna/dist/index.js:9169:37)
-6 error     at VersionCommand.initialize (/Users/zoro/workspace/TestTry/monorepo-test/node_modules/lerna/dist/index.js:9446:16)
+6 verbose isAnythingCommitted 1
+7 silly getCurrentBranch
+8 verbose currentBranch master
+9 silly remoteBranchExists
+10 silly isBehindUpstream
+11 error Error: Command was killed with SIGINT (User interruption with CTRL-C): git remote update
+11 error Fetching origin
+11 error     at makeError (/Users/zoro/workspace/TestTry/monorepo-test/node_modules/execa/lib/error.js:59:11)
+11 error     at module.exports.sync (/Users/zoro/workspace/TestTry/monorepo-test/node_modules/execa/index.js:186:17)
+11 error     at Object.execSync (/Users/zoro/workspace/TestTry/monorepo-test/node_modules/lerna/dist/index.js:1579:31)
+11 error     at updateRemote (/Users/zoro/workspace/TestTry/monorepo-test/node_modules/lerna/dist/index.js:9196:18)
+11 error     at isBehindUpstream (/Users/zoro/workspace/TestTry/monorepo-test/node_modules/lerna/dist/index.js:9186:3)
+11 error     at VersionCommand.initialize (/Users/zoro/workspace/TestTry/monorepo-test/node_modules/lerna/dist/index.js:9477:57)

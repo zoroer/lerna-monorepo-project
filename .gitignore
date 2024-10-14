@@ -1,3 +1,5 @@
 node_modules/
 
 packag-lock.json
+lerna-debug.log
+.idea
