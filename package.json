@@ -1,0 +1,21 @@
+{
+  "name": "monorepo-test",
+  "version": "1.0.0",
+  "description": "lerna monorepo test project",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev-vue2": "lerna run dev --scope vue2-project",
+    "dev-vue3": "lerna run dev --scope vue3-project"
+  },
+  "keywords": ["lerna", "monorepo"],
+  "author": "zoroer",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^8.1.8"
+  }
+}
