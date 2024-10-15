@@ -5,11 +5,15 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "dev": "lerna run dev --scope @mo/vue2-test"
+    "dev2": "lerna run dev --scope @mo/vue2-test",
+    "dev3": "lerna run dev --scope @mo/vue3-test"
   },
   "keywords": ["lerna", "monorepo"],
   "author": "zoroer",
   "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ],
   "dependencies": {},
   "devDependencies": {
     "lerna": "^8.1.8"
