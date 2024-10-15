@@ -5,8 +5,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "dev-vue2": "lerna run dev --scope vue2-project",
-    "dev-vue3": "lerna run dev --scope vue3-project"
+    "dev": "lerna run dev --scope @mo/vue2-test"
   },
   "keywords": ["lerna", "monorepo"],
   "author": "zoroer",
